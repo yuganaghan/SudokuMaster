@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/temp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/workbench_regular"
+        android:gravity="center"
+        android:text="Sudoku"
+        android:paddingRight="120dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textSize="60dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="-12dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/workbench_regular"
+        android:gravity="center"
+        android:paddingLeft="120dp"
+        android:text="Master"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:textStyle="italic" />
+
+    <GridLayout
+        android:id="@+id/gridmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_layout_grid_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:columnCount="3"
+        android:rowCount="3" />
+
+
+    <TextView
+        android:id="@+id/challenge"
+        android:layout_width="85dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/gridmain"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/challenge_back"
+        android:fontFamily="@font/chakrapetchmedium"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:text="Challenge"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/NewGame"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/main_button"
+        android:gravity="center"
+        android:text="@string/newGame"
+        android:fontFamily="@font/chakrapetchmedium"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/continueGame"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="167dp"
+        android:fontFamily="@font/chakrapetchmedium"
+        android:background="@drawable/reverse_main_button"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/continueGame"
+        android:textColor="#171c22"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

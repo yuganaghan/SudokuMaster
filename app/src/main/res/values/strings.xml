@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Sudoku Master</string>
+    <string name="newGame">New Game</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="expert">Expert</string>
+    <string name="nightmare">Nightmare</string>
+    <string name="mistake">Mistakes —> 0/3</string>
+    <string name="time">Time :—  </string>
+    <string name="solve">Solve It.</string>
+    <string name="mistakeP1">Mistake —> </string>
+    <string name="mistakeP3"> /3</string>
+    <string name="continueGame">Continue ..</string>
+    <string name="lost">Game Over</string>
+    <string name="lostText">You lost because you made 3 or more mistakes</string>
+
+</resources>

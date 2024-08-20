@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="460dp"
+    android:background="@drawable/winnigbackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/congratulation" />
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="197dp"
+        android:background="@drawable/background_time"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/difficultyText"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/workbench_regular"
+            android:text="Difficulty :"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/difficulty"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/workbench_regular"
+            android:text="Easy"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_time"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bestTimeText"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:text="Best Time :"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/bestTime"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/background_time"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:text="Your Time :"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/currentTime"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/newGame"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_button"
+            android:paddingTop="7dp"
+            android:paddingBottom="8dp"
+            android:text="New Game"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_button"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/homeIcon"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/home" />
+
+                <TextView
+                    android:id="@+id/homeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

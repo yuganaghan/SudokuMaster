@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/backOfSetting"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#00FFFFFF"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/new_dark_setting_background">
+            <ImageView
+                android:id="@+id/settingIcon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/settings"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:id="@+id/voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="45dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/voiceIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/volume_up" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Volume"
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="45dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/vibrationIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/vibration" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Vibration"
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="45dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/timeIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/time" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Time"
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mistakeShower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/mistakeIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/disabled" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Mistakes"
+                android:textSize="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
